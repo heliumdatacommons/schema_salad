@@ -582,6 +582,7 @@ def file_uri(path, split_frag=False):  # type: (str, bool) -> str
     else:
         urlpath = urllib.request.pathname2url(path)
         frag = ""
+    urlpath = urllib.request.url2pathname(urlpath)
     if urlpath.startswith("//"):
         return "file:%s%s" % (urlpath, frag)
     else:

@@ -1,3 +1,12 @@
+Fork Info
+---------
+Forking to modify file_uri to return origional file path, not a file path converted to URL safe.
+file_uri in the following files have been modified:
+schema_salad/ref_resolver.py
+schema_salad/metaschema.py
+schema_salad/python_codegen_support.py
+
+
 |Build Status| |Build status|
 
 .. |Build Status| image:: https://img.shields.io/travis/common-workflow-language/schema_salad/master.svg?label=unix%20build
